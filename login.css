@@ -288,6 +288,7 @@ li a:hover{
         width: 90%; /* Define a largura da form como 90% da tela */
         max-width: 400px; /* Define um tamanho máximo para evitar inputs muito largos */
         margin: 0 auto; /* Centraliza */
+        height: auto;
     }
 
     .input {
