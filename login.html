@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Go - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="menu1">
+        <nav class="logo">Let<span>'</span>sGo</nav>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <nav class="links" id="nav-links">
+            <ul class="nav-itens">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pages.html">Pages</a></li>
+                <li><a href="constact.hml">Contact us</a></li>
+                
+                <li><button class="login-li"><a class="link-login-li" href="login.html">Login</a></button></li>
+                <li><button class="cadastro-li"><a class="link-cadastro-li" href="cadastro.html">Cadastro</a></button></li>
+        
+            </ul>
+        </nav>
+        <div class="btn">
+            <button class="login-1" href="login.html"><a class="link-login" href="login.html">Login</a></button>
+            <button class="cadastro"><a href="cadastro.html" class="link-cadastro">Cadastro</a></button>
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="login-part1">
+            <h1 class="h1-login">Let<span>'</span>sGo</h1>
+            <p class="p-login">Lorem ipsum dolor sit amet.</p>
+            <p class="p-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptas necessitatibus ipsum magnam praesentium veritatis.</p>
+        </div>
+
+        <div class="login-part2">
+            <p class="title">Log into Let<span>'</span>sGo</p>
+            <p class="p-texto2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <form id="login-form" class="form">
+                <p class="p-conteudo">Email address.</p>
+                <input type="email" id="login-email" class="input" placeholder="letsgo123@gmail.com" required>
+                <p class="p-conteudo">Password</p>
+                <input type="password" id="login-password" class="input" placeholder="Enter your password" required>
+                <p class="link-login"><a href="">Forgot your password?</a></p>
+                <button type="submit" class="form-btn">Log in</button>
+                <p class="link-login">
+                    Não tem uma conta? <a href="cadastro.html" class="sign-up-link">Cadastre-se</a>
+                </p>
+            </form>
+        
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() { 
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.getElementById("nav-links");
+    
+            menuToggle.addEventListener("click", function() {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+    
+
+</body>
+</html>
