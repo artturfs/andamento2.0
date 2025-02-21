@@ -9,26 +9,28 @@
 </head>
 <body>
     
-    <header class="menu1">
-        <nav class="logo">Let<span>'</span>sGo</nav>
-
-        <nav class="links" id="nav-links">
-            <ul class="nav-itens">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="pages.html">Pages</a></li>
-                <li  style="padding-right: 20px"><a href="constact.hml">Contact us</a></li>
-                
-            </ul>
-        </nav>
-
-        <div class="btn">
-            <button class="login" href="login.html"><a class="link-login" href="login.html">Login</a></button>
-            <button class="cadastro">Cadastro</button>
-        </div>
-    </header>
-        
+  <header class="menu1">
+    <nav class="logo">Let<span>'</span>sGo</nav>
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+    <nav class="links" id="nav-links">
+        <ul class="nav-itens">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pages.html">Pages</a></li>
+            <li><a href="constact.hml">Contact us</a></li>
+            
+            <a class="link-login-li" href="login.html"></a><li><button class="login-li">Login</button></li></a>
+            <a class="link-cadastro-li" href="cadastro.html"></a><li><button class="cadastro-li">Cadastro</button></li></a>
+    
+        </ul>
+    </nav>
+    <div class="btn">
+        <button class="login-1" href="login.html"><a class="link-login" href="login.html">Login</a></button>
+        <button class="cadastro"><a href="cadastro.html" class="link-cadastro">Cadastro</a></button>
+    </div>
+</header>
+    
 <section class="slide1">
         
     <div class="slider">
@@ -150,7 +152,16 @@
         </div>
       </footer>
 
-
+      <script>
+        document.addEventListener("DOMContentLoaded", function() { 
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.getElementById("nav-links");
+    
+            menuToggle.addEventListener("click", function() {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
 
 </body>
 </html>
