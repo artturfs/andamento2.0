@@ -13,7 +13,8 @@ body {
     --cor5--: #292E33;
     --cor6--: #202B33;
     --cor7--: #85c8ff;
-    --cor8--: white
+    --cor8--: white;
+    --cor9--: #eee;
 }
 
 .menu-toggle {
@@ -30,7 +31,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1px;
+    padding: 10px;
     background-color: var(--cor6--);
 }
 
@@ -55,6 +56,10 @@ span {
     padding-left: 20px;
 }
 
+a{
+    text-decoration: none;
+}
+
 li a {
     color: var(--cor8--);
     text-decoration: none;
@@ -62,9 +67,9 @@ li a {
 }
 
 li a:hover {
-    color: var(--cor7--);
+    color: var(--cor8--);
     transition: all 1s;
-    border-bottom: .5px solid var(--cor7--);
+    border-bottom: .5px solid var(--cor6--);
     filter: blur(60%);
     box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.151);
     padding: all;
@@ -135,15 +140,14 @@ a .link-login:hover{
 /* */
 
 .slide1 {
-    height: 60vh;
+    height: 80vh;
     background-color: var(--cor6--);
     
 }
 
 .slide2 {
     height: 40vh;
-    background-color: var(--cor8--);
-
+    background-color: var(--cor--);
 }
 
 .slide3 {
@@ -161,7 +165,6 @@ footer {
     color: var(--cor8--);
     padding: 20px 0;
     text-align: center;
-    border-radius: 7000px 7000px 0px 0;
 }
 
 .footer-content {
@@ -186,14 +189,12 @@ footer li{
 
 /* Responsividade */
 @media (max-width: 600px) {
-
-
     .menu-toggle {
         display: flex;
         position: absolute;
         right: 30px;
         z-index: 500;
-        top: -25px;
+        top: -15px;
         color: white;
     }
 
