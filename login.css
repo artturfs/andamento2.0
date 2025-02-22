@@ -94,10 +94,13 @@ li a{
     padding: 5px 10px;
 }
 
-li a:hover{
+li a:hover {
+
     transition: all 1s;
-    border-bottom: .5px solid var(--cor6--);
+    border-bottom: .5px solid var(--cor8--);
+    filter: blur(60%);
     box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.151);
+    padding: all;
 }
   
 .login{
@@ -111,9 +114,8 @@ li a:hover{
     transition: 1s;
 }
 
-.login:hover{
-    box-shadow: 1px 1px 20px #000000a2;
-    transition: 1s;
+.link-login-li:hover {
+    border-bottom: 0.5px solid var(--cor6--);
 }
 
 .login>.login-part1{
@@ -388,5 +390,9 @@ li a:hover{
         width: 100%;
         height: 5vh;
         min-height: 45px;
+    }
+
+    .link-cadastro-li:hover{
+        border-bottom: .5px solid white;
     }
 }

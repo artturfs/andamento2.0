@@ -221,6 +221,7 @@ li a:hover{
     border-radius: 5px;
     font-size: 15px;
     font-weight: 600;
+    margin-top: -10px;
     box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.274);
     transition: 1s;
 }
@@ -370,7 +371,7 @@ li a:hover{
 
 @media (min-width: 1400px) {
     .login {
-        width: 60%; /* Mantém proporcionalidade */
+        width: 70%; /* Mantém proporcionalidade */
         max-width: 1500px; /* Evita que fique exageradamente grande */
         margin: 50px auto;
     }
@@ -382,16 +383,19 @@ li a:hover{
     }
 
     .input {
-        width: 100%;
-        max-width: 100%;
+        width: 500px;
+        max-width: 900px;
         height: 100%;
+        margin: 0 auto;
         min-height: 90%;
 
     }
 
     .form-btn {
-        width: 100%;
+        width: 500px;
         height: 5vh;
+        margin: 0 auto;
         min-height: 45px;
+        max-width: 900px;
     }
 }
