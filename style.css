@@ -46,9 +46,10 @@ span {
 
 .logo {
     font-size: x-large;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 4px;
     margin: 0;
+    font-style:oblique;
     color: var(--cor6--);
 }
 
@@ -257,7 +258,7 @@ footer li{
 
     .menu1 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding: 10px;
         background-color: var(--cor9--);
