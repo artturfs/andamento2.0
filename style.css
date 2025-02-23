@@ -251,6 +251,10 @@ footer li{
 }
 
 @media (max-width: 600px) {
+    body{
+        width: 100%;
+    }
+
     .menu1 {
         display: flex;
         justify-content: space-between;
@@ -266,7 +270,7 @@ footer li{
         font-size: x-large;
         font-weight: 700;
         z-index: 500;
-        margin: 0 20px;
+        margin: 0 auto;
     }
 
     .logo {
