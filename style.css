@@ -277,7 +277,7 @@ footer li{
     }
 
     .search {
-        margin: 0 auto 0 30px;
+        margin: 0 auto;
         flex-grow: 1; /* Para ocupar o espaço disponível */
         display: flex;
         justify-content: center;
