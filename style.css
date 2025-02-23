@@ -163,7 +163,7 @@ li a:hover {
     border-radius: 5px;
     width: 14em;
     transition: all ease-in-out .5s;
-    margin-right: -2rem;
+    margin-right: -40px;
   }
   
   .search__input:hover, .search__input:focus {
